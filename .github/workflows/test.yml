@@ -1,0 +1,17 @@
+name : a test workflow
+
+on : 
+    push:
+        branches: ["main"]
+
+jobs:
+    testing:
+        runs-on : ubuntu-lastest
+        steps:
+            #step 1
+            - name: welcome people
+              run: echo "welcome to class"
+
+             #step 2
+            - name: say goodboye
+              run: echo "Goodbye everyone" 
